@@ -39,7 +39,7 @@ export function LessonLayout({
   }
 
   return (
-    <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", background: "var(--bg)" }}>
+    <div className="lesson-layout" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", background: "var(--bg)" }}>
       {/* Top bar */}
       <header style={{
         borderBottom: "1px solid var(--border)",
@@ -91,10 +91,10 @@ export function LessonLayout({
             }}
           >
             <span>{currentIsComplete ? "✓" : "○"}</span>
-            <span>{currentIsComplete ? "done" : "mark done"}</span>
+            <span className="mark-done-label">{currentIsComplete ? "done" : "mark done"}</span>
           </button>
 
-          <span style={{ fontSize: "0.82rem", color: "var(--text-muted)", fontFamily: "monospace" }}>
+          <span className="lesson-header-path" style={{ fontSize: "0.82rem", color: "var(--text-muted)", fontFamily: "monospace" }}>
             {moduleSlug} / {lessonNumber}
           </span>
         </div>
@@ -211,7 +211,7 @@ export function LessonLayout({
         className="lesson-body"
       >
         {/* Prose column */}
-        <div style={{
+        <div className="lesson-body-prose" style={{
           overflowY: "auto",
           padding: "2.5rem 2rem 2.5rem 2.5rem",
           borderRight: "1px solid var(--border)",
@@ -255,13 +255,6 @@ export function LessonLayout({
         </div>
       </div>
 
-      <style>{`
-        @media (max-width: 768px) {
-          .lesson-body {
-            grid-template-columns: 1fr !important;
-          }
-        }
-      `}</style>
     </div>
   );
 }

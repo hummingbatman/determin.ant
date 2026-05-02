@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Space_Grotesk } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
@@ -8,6 +8,11 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space
 export const metadata: Metadata = {
   title: "determin.ant — Linear Algebra from Scratch",
   description: "Learn linear algebra through interactive visualizations. No prerequisites. Just intuition.",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
