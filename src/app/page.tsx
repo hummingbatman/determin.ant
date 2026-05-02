@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { MODULES } from "@/lib/lessons";
+import { ModuleProgress } from "@/components/ui/ModuleProgress";
 
 const modules = [
   {
@@ -139,7 +141,7 @@ export default function Home() {
         <p style={{ color: "var(--text-muted)", marginBottom: "2.5rem", fontSize: "0.9rem" }}>8 modules · 38 lessons · All free</p>
 
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-          {modules.map((mod) => (
+          {modules.map((mod, idx) => (
             <div key={mod.number} style={{
               background: "var(--bg-card)",
               border: "1px solid var(--border)",
@@ -166,6 +168,7 @@ export default function Home() {
                       </span>
                     ))}
                   </div>
+                  {mod.available && <ModuleProgress mod={MODULES[idx]} />}
                 </div>
                 {mod.available && (
                   <Link href={mod.href} style={{
