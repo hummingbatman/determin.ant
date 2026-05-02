@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# determin.ant
 
-## Getting Started
+Interactive linear algebra — explained with pictures, not just equations.
 
-First, run the development server:
+**[determin.ant](https://determin-ant.vercel.app)** is a free, open-source learning website for people who want to actually understand linear algebra. Every concept is interactive: drag vectors, watch matrices transform space, build intuition before formulas.
+
+---
+
+## Who is this for?
+
+- **Complete beginners** — starts from zero, no prerequisites
+- **CS undergrads** — connects every idea to code (Python/NumPy examples throughout)
+- **ML practitioners** — finally understand why matrices multiply the way they do
+
+---
+
+## Course content
+
+**8 modules · 29 lessons · all free**
+
+| Module | Lessons |
+|--------|---------|
+| 01 · Vectors | What is a vector? · Vector addition · Scalar multiplication · Linear combinations · Span |
+| 02 · Transformations | What is a transformation? · Matrices as transformations · Composition · The transformation zoo · Build your own |
+| 03 · Systems of Equations | Geometric interpretation · Gaussian elimination · Types of solutions |
+| 04 · Determinants | Area scaling · The zero determinant · Invertibility |
+| 05 · Vector Spaces | Basis and dimension · Column, null, and row space · Rank |
+| 06 · Eigenvalues | Eigenvectors — the intuition · The characteristic polynomial · Diagonalization |
+| 07 · Orthogonality | Dot product · Projection · Gram-Schmidt · Least squares |
+| 08 · SVD | Rotate, stretch, rotate · SVD explorer · Image compression |
+
+---
+
+## Running locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech stack
 
-## Learn More
+- [Next.js 16](https://nextjs.org) (App Router)
+- TypeScript
+- [KaTeX](https://katex.org) for math rendering
+- [Vitest](https://vitest.dev) for unit tests (`npm test`)
+- Pure TypeScript math library — no external linear algebra dependencies
+- SVG-based interactive canvases
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Running tests
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm test
+```
 
-## Deploy on Vercel
+62 tests covering `vec2`, `mat2`, `transforms`, and `solvers`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+MIT
