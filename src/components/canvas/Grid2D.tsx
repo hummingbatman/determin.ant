@@ -67,10 +67,10 @@ export function Grid2D({
     gridIntegers.push(i);
   }
 
-  const GRID = "#e4e4ee";
-  const AXIS = "#c4c4d8";
-  const LABEL = "#aaaacc";
-  const AXIS_BOLD = "#9090b8";
+  const GRID = "var(--grid-line)";
+  const AXIS = "var(--axis)";
+  const LABEL = "var(--text-faint)";
+  const AXIS_BOLD = "var(--axis)";
 
   return (
     <svg

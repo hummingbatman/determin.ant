@@ -13,6 +13,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={spaceGrotesk.variable}>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: `
+          try {
+            var t = localStorage.getItem('determin-ant-theme');
+            if (t === 'dark') document.documentElement.dataset.theme = 'dark';
+          } catch(e) {}
+        `}} />
+      </head>
       <body>
         {children}
         <Analytics />

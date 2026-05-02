@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { useProgress } from "@/hooks/useProgress";
 import { getModule } from "@/lib/lessons";
 import { usePathname } from "next/navigation";
+import { ThemeToggle } from "./ThemeToggle";
 
 interface LessonLayoutProps {
   module: string;
@@ -71,6 +72,7 @@ export function LessonLayout({
         </div>
 
         <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+          <ThemeToggle />
           {/* Complete toggle */}
           <button
             onClick={() => toggleComplete(pathname)}
@@ -240,7 +242,7 @@ export function LessonLayout({
         </div>
 
         {/* Canvas column */}
-        <div style={{
+        <div className="canvas-col" style={{
           overflowY: "auto",
           padding: "2rem",
           display: "flex",

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MODULES } from "@/lib/lessons";
 import { ModuleProgress } from "@/components/ui/ModuleProgress";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 const modules = [
   {
@@ -73,10 +74,11 @@ export default function Home() {
   return (
     <div style={{ minHeight: "100vh", background: "var(--bg)" }}>
       {/* Nav */}
-      <header style={{ borderBottom: "1px solid var(--border)", padding: "0 2rem", height: "52px", display: "flex", alignItems: "center" }}>
+      <header style={{ borderBottom: "1px solid var(--border)", padding: "0 2rem", height: "52px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <span style={{ fontFamily: "monospace", fontSize: "1rem", fontWeight: 700, color: "var(--text)", letterSpacing: "0.04em" }}>
           determin<span style={{ color: "var(--accent)" }}>.</span>ant
         </span>
+        <ThemeToggle />
       </header>
 
       {/* Hero */}
