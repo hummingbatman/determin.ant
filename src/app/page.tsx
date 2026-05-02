@@ -5,7 +5,7 @@ const modules = [
     number: "01",
     title: "Vectors",
     description: "What is a vector? Learn to think geometrically before algebraically.",
-    lessons: ["What is a vector?", "Vector addition", "Scalar multiplication", "Linear combinations", "Span"],
+    lessons: ["What is a vector?", "Vector addition", "Scalar multiplication", "Linear combinations", "Span", "Linear independence", "Cross product"],
     href: "/lessons/vectors/what-is-a-vector",
     available: true,
   },
@@ -21,7 +21,7 @@ const modules = [
     number: "03",
     title: "Systems of Equations",
     description: "Finding where lines (and planes) intersect — geometrically and algebraically.",
-    lessons: ["Geometric interpretation", "Gaussian elimination", "Types of solutions"],
+    lessons: ["Geometric interpretation", "Gaussian elimination", "LU decomposition", "Types of solutions"],
     href: "/lessons/systems/geometric-interpretation",
     available: true,
   },
@@ -37,7 +37,7 @@ const modules = [
     number: "05",
     title: "Vector Spaces",
     description: "The bigger picture: bases, dimensions, and the spaces matrices create.",
-    lessons: ["Basis and dimension", "Column, null, and row space", "Rank"],
+    lessons: ["Basis and dimension", "Column, null, and row space", "Rank", "Rank-Nullity theorem", "Change of basis"],
     href: "/lessons/vector-spaces/basis-and-dimension",
     available: true,
   },
@@ -45,7 +45,7 @@ const modules = [
     number: "06",
     title: "Eigenvalues",
     description: "Some vectors don't change direction under a transformation. Those are special.",
-    lessons: ["Eigenvectors — the intuition", "The characteristic polynomial", "Diagonalization"],
+    lessons: ["Eigenvectors — the intuition", "The characteristic polynomial", "Complex eigenvalues", "Diagonalization", "Positive definite matrices", "Markov chains"],
     href: "/lessons/eigenvalues/eigenvector-intuition",
     available: true,
   },
@@ -61,7 +61,7 @@ const modules = [
     number: "08",
     title: "SVD",
     description: "Every matrix is a rotation, a stretch, and another rotation. This is SVD.",
-    lessons: ["Rotate, stretch, rotate", "SVD explorer", "Image compression"],
+    lessons: ["Rotate, stretch, rotate", "SVD explorer", "Matrix norms", "Image compression"],
     href: "/lessons/svd/rotate-stretch-rotate",
     available: true,
   },
@@ -136,7 +136,7 @@ export default function Home() {
       {/* Course modules */}
       <section style={{ maxWidth: "720px", margin: "0 auto", padding: "4rem 2rem" }}>
         <h2 style={{ fontSize: "1.35rem", fontWeight: 700, color: "var(--text)", marginBottom: "0.4rem" }}>Course modules</h2>
-        <p style={{ color: "var(--text-muted)", marginBottom: "2.5rem", fontSize: "0.9rem" }}>8 modules · 29 lessons · All free</p>
+        <p style={{ color: "var(--text-muted)", marginBottom: "2.5rem", fontSize: "0.9rem" }}>8 modules · 38 lessons · All free</p>
 
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           {modules.map((mod) => (

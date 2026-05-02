@@ -91,9 +91,9 @@ export default function Lesson() {
       module="Module 6: Eigenvalues"
       moduleSlug="06-eigenvalues"
       lessonTitle="Diagonalization"
-      lessonNumber="6.3"
-      prev={{ href: "/lessons/eigenvalues/characteristic-polynomial", title: "The Characteristic Polynomial" }}
-      next={{ href: "/lessons/orthogonality/dot-product", title: "Dot Product" }}
+      lessonNumber="6.4"
+      prev={{ href: "/lessons/eigenvalues/complex-eigenvalues", title: "Complex Eigenvalues" }}
+      next={{ href: "/lessons/eigenvalues/positive-definite", title: "Positive Definite Matrices" }}
       prose={<Prose />}
       canvas={<DiagonalizationVisualizer />}
     />

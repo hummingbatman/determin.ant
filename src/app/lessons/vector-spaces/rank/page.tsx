@@ -87,7 +87,7 @@ export default function Lesson() {
       lessonTitle="Rank"
       lessonNumber="5.3"
       prev={{ href: "/lessons/vector-spaces/column-null-row-space", title: "Column, Null, and Row Space" }}
-      next={{ href: "/lessons/eigenvalues/eigenvector-intuition", title: "Eigenvectors — the Intuition" }}
+      next={{ href: "/lessons/vector-spaces/rank-nullity", title: "Rank-Nullity Theorem" }}
       prose={<Prose />}
       canvas={<RankVisualizer />}
     />

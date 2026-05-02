@@ -95,7 +95,7 @@ export default function Lesson() {
       lessonTitle="Gaussian Elimination"
       lessonNumber="3.2"
       prev={{ href: "/lessons/systems/geometric-interpretation", title: "Geometric Interpretation" }}
-      next={{ href: "/lessons/systems/solution-types", title: "Solution Types" }}
+      next={{ href: "/lessons/systems/lu-decomposition", title: "LU Decomposition" }}
       prose={<Prose />}
       canvas={<GaussianElimination />}
     />

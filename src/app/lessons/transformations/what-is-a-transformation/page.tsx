@@ -96,7 +96,7 @@ export default function Lesson() {
       moduleSlug="02-transformations"
       lessonTitle="What is a Transformation?"
       lessonNumber="2.1"
-      prev={{ href: "/lessons/vectors/span", title: "Span" }}
+      prev={{ href: "/lessons/vectors/cross-product", title: "Cross Product" }}
       next={{ href: "/lessons/transformations/matrices-as-transformations", title: "Matrices as Transformations" }}
       prose={<Prose />}
       canvas={<TransformationIntro />}

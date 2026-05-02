@@ -88,7 +88,7 @@ export default function Lesson() {
       moduleSlug="07-orthogonality"
       lessonTitle="Dot Product"
       lessonNumber="7.1"
-      prev={{ href: "/lessons/eigenvalues/diagonalization", title: "Diagonalization" }}
+      prev={{ href: "/lessons/eigenvalues/markov-chains", title: "Markov Chains" }}
       next={{ href: "/lessons/orthogonality/projection", title: "Projection" }}
       prose={<Prose />}
       canvas={<DotProductVisualizer />}

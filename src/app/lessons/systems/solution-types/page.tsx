@@ -93,8 +93,8 @@ export default function Lesson() {
       module="Module 3: Systems of Equations"
       moduleSlug="03-systems"
       lessonTitle="Solution Types"
-      lessonNumber="3.3"
-      prev={{ href: "/lessons/systems/gaussian-elimination", title: "Gaussian Elimination" }}
+      lessonNumber="3.4"
+      prev={{ href: "/lessons/systems/lu-decomposition", title: "LU Decomposition" }}
       next={{ href: "/lessons/determinants/area-scaling", title: "Area Scaling" }}
       prose={<Prose />}
       canvas={<SolutionTypes />}

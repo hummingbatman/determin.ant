@@ -116,7 +116,7 @@ export default function Lesson() {
       lessonTitle="Span"
       lessonNumber="1.5"
       prev={{ href: "/lessons/vectors/linear-combinations", title: "Linear Combinations" }}
-      next={{ href: "/lessons/transformations/what-is-a-transformation", title: "What is a Transformation?" }}
+      next={{ href: "/lessons/vectors/linear-independence", title: "Linear Independence" }}
       prose={<Prose />}
       canvas={<SpanVisualizer />}
     />

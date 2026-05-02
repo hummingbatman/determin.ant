@@ -93,7 +93,7 @@ export default function Lesson() {
       lessonTitle="The Characteristic Polynomial"
       lessonNumber="6.2"
       prev={{ href: "/lessons/eigenvalues/eigenvector-intuition", title: "Eigenvectors — the Intuition" }}
-      next={{ href: "/lessons/eigenvalues/diagonalization", title: "Diagonalization" }}
+      next={{ href: "/lessons/eigenvalues/complex-eigenvalues", title: "Complex Eigenvalues" }}
       prose={<Prose />}
       canvas={<CharPolyExplorer />}
     />

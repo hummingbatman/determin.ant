@@ -91,8 +91,8 @@ export default function Lesson() {
       module="Module 8: SVD"
       moduleSlug="08-svd"
       lessonTitle="Image Compression"
-      lessonNumber="8.3"
-      prev={{ href: "/lessons/svd/svd-explorer", title: "SVD Explorer" }}
+      lessonNumber="8.4"
+      prev={{ href: "/lessons/svd/matrix-norms", title: "Matrix Norms" }}
       prose={<Prose />}
       canvas={<ImageCompression />}
     />

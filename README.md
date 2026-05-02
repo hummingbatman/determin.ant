@@ -16,7 +16,7 @@ Interactive linear algebra — explained with pictures, not just equations.
 
 ## Course content
 
-**8 modules · 29 lessons · all free**
+\*\*8 modules · 38 lessons · all free\*\*
 
 | Module | Lessons |
 |--------|---------|

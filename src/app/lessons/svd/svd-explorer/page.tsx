@@ -89,7 +89,7 @@ export default function Lesson() {
       lessonTitle="SVD Explorer"
       lessonNumber="8.2"
       prev={{ href: "/lessons/svd/rotate-stretch-rotate", title: "Rotate, Stretch, Rotate" }}
-      next={{ href: "/lessons/svd/image-compression", title: "Image Compression" }}
+      next={{ href: "/lessons/svd/matrix-norms", title: "Matrix Norms" }}
       prose={<Prose />}
       canvas={<SVDExplorer />}
     />

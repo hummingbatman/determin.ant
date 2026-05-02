@@ -89,7 +89,7 @@ export default function Lesson() {
       moduleSlug="06-eigenvalues"
       lessonTitle="Eigenvectors — the Intuition"
       lessonNumber="6.1"
-      prev={{ href: "/lessons/vector-spaces/rank", title: "Rank" }}
+      prev={{ href: "/lessons/vector-spaces/change-of-basis", title: "Change of Basis" }}
       next={{ href: "/lessons/eigenvalues/characteristic-polynomial", title: "The Characteristic Polynomial" }}
       prose={<Prose />}
       canvas={<EigenvectorIntuition />}
