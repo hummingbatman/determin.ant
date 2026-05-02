@@ -46,8 +46,11 @@ export function LessonLayout({
       <div style={{
         flex: 1,
         display: "grid",
-        gridTemplateColumns: "minmax(0, 480px) 1fr",
+        gridTemplateColumns: "minmax(0, 520px) minmax(0, 600px)",
         overflow: "hidden",
+        maxWidth: "1160px",
+        margin: "0 auto",
+        width: "100%",
       }}
         className="lesson-body"
       >
